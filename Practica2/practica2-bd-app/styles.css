@@ -2,7 +2,8 @@ body {
     font-family: sans-serif;
     background: rgb(15,23,42);
     background: linear-gradient(180deg, rgba(15,23,42,1) 0%, rgba(14,39,97,1) 100%); 
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     color: white;
 }
 
@@ -51,6 +52,7 @@ button:hover {
 table {
     text-align: center;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 thead {

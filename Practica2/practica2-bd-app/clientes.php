@@ -163,7 +163,7 @@ if ($clientes === false) {
                         <td><?php echo $row['TelefonoC'];?></td>
                         <td><?php echo get_status($row['StatusC']);?></td>
                         <td><?php echo $row['FechaAfiliacion']->format('d-m-Y');?></td>
-                        <td><?php echo $row['FechaDesafiliacion']->format('d-m-Y');?></td>
+                        <td><?php if (!empty($row['FechaDesafiliacion'])) echo $row['FechaDesafiliacion']->format('d-m-Y');?></td>
                         <td>
                             <form action="clientes.php" method="post">
                                 <input type="hidden" name="rif" value="<?php echo $row['RIFCliente'];?>">
